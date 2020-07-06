@@ -6,8 +6,8 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-// Para poder utilizar el archivo con las rutas
-app.use(require('./routes/usuario'));
+// Para poder utilizar el archivo con las rutas, configuracion local de rutas, definidas en index.js
+app.use(require('./routes/index'));
 
 
 
